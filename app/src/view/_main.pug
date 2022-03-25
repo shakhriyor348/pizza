@@ -1,0 +1,36 @@
+main.main 
+    .container
+        .main__tabs 
+            .main__content 
+                .main__content-categories 
+                    ul.main__content-list 
+                        li: a(href="").main__content-link.active Все
+                        li: a(href="" data-category="Мясные").main__content-link Мясные
+                        li: a(href="" data-category="Вегетарианская").main__content-link Вегетарианская
+                        li: a(href="" data-category="Гриль").main__content-link Гриль
+                        li: a(href="" data-category="Острые").main__content-link Острые
+                        li: a(href="" data-category="Закрытые").main__content-link Закрытые
+                .main__content-sort 
+                    .main__content-label 
+                        img.main__content-arrow(src="./images/sort-arrow.svg" alt="")
+                        span.main__content-sortSpan Сортировка по:
+                        span.main__content-sortInfo 
+                    .main__content-sortPopup 
+                        ul  
+                            - var arr = ['популярности', 'цене', 'алфавиту']
+                            each items in arr 
+                                li.main__content-li= items
+            h3.main__content-title Все пиццы
+            .main__tabs-content 
+                //- .main__tabs-item 
+                //-     img.main__tabs-img(src="./images/cheeseBurger-pizza.webp" alt="")
+                //-     h4.main__tabs-title Чизбургер-пицца
+                //-     .main__tabs-info 
+                //-         a.main__tabs-btn.active(href="") тонкое 
+                //-         a.main__tabs-btn(href="") традиционное
+                //-         a.main__tabs-size.active(href="")  26 см.
+                //-         a.main__tabs-size(href="")  30 см.
+                //-         a.main__tabs-size(href="")  40 см.
+                //-     .main__tabs-add  
+                //-         span.main__tabs-price от 395 ₽
+                //-         a.main__tabs-addCart(href="") + Добавить 
